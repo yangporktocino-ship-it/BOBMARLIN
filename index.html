@@ -28,6 +28,13 @@
 .nav.open .menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 }
 @media(prefers-reduced-motion:reduce){.menu-btn span{transition:none}}
+
+@media(max-width:900px){
+.hero{min-height:0;padding-bottom:0;display:flex;flex-direction:column;align-items:stretch}
+.hero-copy{position:relative;z-index:8;width:100%}
+.hero-fish{position:relative;right:auto;top:auto;bottom:auto;width:min(100%,560px);margin:14px auto -12px;justify-content:center}
+.hero-fish img{width:100%;height:auto;max-height:none}
+}
 </style>
 </head>
 <body>
@@ -46,7 +53,7 @@
         <div class="hero-copy">
           <div class="eyebrow">🐟 THE MARLIN WAVE IS HERE</div>
           <h1>HOLD MARLIN.<br><span>EARN SUI.</span></h1>
-          <p>A reward-powered memecoin riding the Sui wave.<br>Every MARLIN transfer carries a 3% reward fee<br>distributed automatically to holders.</p>
+          <p>A reward-powered memecoin riding the Sui wave. <br>Every MARLIN transfer carries a 3% reward fee <br>distributed automatically to holders.</p>
           <div class="hero-actions"><a class="btn primary" id="buy" href="#rewards">BUY $MARLIN <span>→</span></a><a class="btn dark" href="#rewards">◒ VIEW CHART</a></div>
           <div class="mini-stats"><div><b>3%</b><span>Holder Rewards</span></div><div><b>⚡</b><span>Automatic Distribution</span></div><div><b>◔</b><span>No Staking</span></div></div>
         </div>
